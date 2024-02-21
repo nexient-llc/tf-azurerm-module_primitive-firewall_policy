@@ -64,7 +64,7 @@ variable "insights" {
 }
 
 variable "intrusion_detection" {
-  description = "(Optional) A intrusion_detection block"
+  description = "(Optional) Intrusion detection is feature provided by Azure Firewall Premium tier for network intrusion detection and prevention. To configure intrusion detection, aintrusion_detection block with below arguments is required. More information for each of these attributes can found at https://learn.microsoft.com/en-us/azure/firewall/premium-features#idps and https://techcommunity.microsoft.com/t5/azure-network-security-blog/intrusion-detection-and-prevention-system-idps-based-on/ba-p/3921330"
   type = object({
     mode = string
     signature_overrides = list(object({

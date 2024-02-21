@@ -51,7 +51,6 @@ func TestFirewall(t *testing.T, ctx types.TestContext) {
 				assert.NotEmpty(t, (*firewallInstance.IPConfigurations))
 				assert.NotEmpty(t, (*firewallInstance.FirewallPolicy.ID))
 			}
-
 		})
 	}
 }
